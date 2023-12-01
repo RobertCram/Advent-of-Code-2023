@@ -1,0 +1,29 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.112.0/containers/ruby-2-rails-5
+{
+	"name": "AOC2023",
+	"dockerFile": "./Dockerfile",
+	"workspaceFolder": "/workspaces/aoc2023",
+	"runArgs": [
+		"--memory=32g"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mogeko.haskell-extension-pack",
+				"genieai.chatgpt-vscode",
+				"GitHub.copilot-chat",
+				"GitHub.copilot",
+				"eamodio.gitlens",
+				"otovo-oss.htmx-tags"
+			]
+		}
+	},
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/workspaces/aoc2023,type=bind,consistency=cached"
+	  ]	
+
+	// "postStartCommand": ". /root/.ghcup/env"
+
+	
+}
