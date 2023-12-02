@@ -6,6 +6,7 @@ import System.Command
 import Data.Maybe (fromMaybe)
 import ReadArgs (readArgs)
 import Day01.Day01
+import Day02.Day02
 import Data.List (intersperse)
 import Data.IntMap (fromList, elems, lookup)
 
@@ -25,5 +26,6 @@ getSolutions md = case md of
   where solutions = fromList days
 
 days = [
-  (1, day01)
+  (1, day01),
+  (2, day02)
  ]
